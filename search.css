@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "lato";
+    src: url(./RobotoCondensed-Light.ttf);
+}
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+  
+}
+.container{
+    border: 2px solid rgba(0,0,0,0.4);
+    box-shadow:1px 1px 8px 5px rgba(0,0,0,0.4),-1px -1px 5px 5px rgba(0,0,0,0.4);
+    width: 20rem;
+    height: 30rem;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding:15px;
+    overflow: hidden;
+
+}
+form{
+    position: relative;
+    margin:auto;
+    border:2px solid rgba(0,0,0,0.4);
+   
+}
+input{
+    width:92%;
+    padding:4px;
+   margin-left: 25px;
+   border:none;
+    border-right: 2px solid rgba(0,0,0,0.4)
+}
+input:focus{
+    outline:none;
+}
+form i{
+    position:absolute;
+    top:50%;
+    left: 5px;
+    transform:translate(0,-50%);
+    cursor:pointer;
+    
+}
+form i:active{
+    color:white;
+}
+input:focus form i{
+    display:none;
+}
+
+/*------------end of input box ---------------*/
+
+.productsContainer{
+   /* border:2px solid pink;*/
+    height: 61vh;
+    margin-top:2vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+}
+
+.productsContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.productsContainer .product{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    
+}
+.product img{
+    width:45%;
+    min-height:100%;
+    object-fit:cover;
+    object-position: center;
+}
+.product .text{
+    width:50%;
+    padding:5px;
+    font-family:lato;
+    
+}
+button{
+    padding:0.5rem;
+    background:rgba(0,0,0,0.1);
+    box-shadow:0.5px 1px 1px 1px rgba(0,0,0,0.4);
+    border:none;
+    
+    cursor:pointer;
+  
+}
+button:active{
+    background-color: white;
+}
